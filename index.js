@@ -29,8 +29,7 @@ document.getElementById("read-button").addEventListener("click", () => {
 });
 
 function getGachaLogs(content) {
-  console.log(content.trim());
-
+  console.log("getGachaLogs ====== ");
   $.post(
     "https://genshin-gacha-logs.herokuapp.com/get-gacha-logs",
     { content: content },
