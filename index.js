@@ -31,11 +31,11 @@ document.getElementById("read-button").addEventListener("click", () => {
 function getGachaLogs(content) {
   console.log(content.trim());
 
-  //   $.post(
-  //     "localhost:3001/get-gacha-logs",
-  //     { content: content },
-  //     function (result) {
-  //       console.log(result);
-  //     }
-  //   );
+  $.post(
+    "https://genshin-gacha-logs.herokuapp.com/get-gacha-logs",
+    { content: content },
+    function (result) {
+      console.log(result);
+    }
+  );
 }
