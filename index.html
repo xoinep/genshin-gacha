@@ -66,13 +66,34 @@
               class="row d-flex flex-row flex-grow-1 flex-shrink-0 justify-content-between align-items-center"
             >
               <div class="col">
-                <input id="file-input" type="file" style="filter: brightness(94%)" />
+                <input
+                  id="file-input"
+                  type="file"
+                  style="filter: brightness(94%)"
+                />
               </div>
               <div class="col">
                 <button id="read-button" class="btn btn-primary" type="button">
                   Get Gacha Logs
                 </button>
               </div>
+            </div>
+            <div>
+              <table id="records_table" border="1">
+                <thead>
+                  <tr style="border-color: var(--pink); background: #a9a9a9">
+                    <th>uid</th>
+                    <th>gacha_type</th>
+                    <th>item_id</th>
+                    <th>count</th>
+                    <th>time</th>
+                    <th>name</th>
+                    <th>lang</th>
+                    <th>item_type</th>
+                    <th>rank_type</th>
+                  </tr>
+                </thead>
+              </table>
             </div>
           </div>
         </div>
