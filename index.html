@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>genshin-gacha</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bitter:400,700"
+    />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/Custom-File-Upload.css" />
+    <link rel="stylesheet" href="assets/css/Header-Dark.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header-dark">
+      <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search">
+        <div class="container">
+          <a class="navbar-brand" href="#">&nbsp;Chai Đần</a
+          ><button
+            data-toggle="collapse"
+            class="navbar-toggler"
+            data-target="#navcol-1"
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Mua Acc</a></li>
+            </ul>
+            <form class="form-inline mr-auto" target="_self">
+              <div class="form-group">
+                <label for="search-field"><i class="fa fa-search"></i></label
+                ><input
+                  class="form-control search-field"
+                  type="search"
+                  id="search-field"
+                  name="search"
+                />
+              </div>
+            </form>
+            <span class="navbar-text"><a class="login" href="#">Log In</a></span
+            ><a class="btn btn-light action-button" role="button" href="#"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="container hero">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <h1 class="text-center">Genshin Gacha Logs</h1>
+            <p style="color: rgb(249, 249, 249)">
+              Hướng dẫn sử dụng:<br />Bước 1: Vào màn hình gacha của game trên
+              PC.<br />Bước 2: Copy file ra Desktop<br />${userPath}/AppData/LocalLow/miHoYo/${name}/output_log.txt<br />Bước
+              3: Upload file lên và xem kết quả.
+            </p>
+            <div
+              class="row d-flex flex-row flex-grow-1 flex-shrink-0 justify-content-between align-items-center"
+            >
+              <div class="col">
+                <input id="file-input" type="file" style="filter: brightness(94%)" />
+              </div>
+              <div class="col">
+                <button id="read-button" class="btn btn-primary" type="button">
+                  Get Gacha Logs
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Custom-File-Upload.js"></script>
+    <script src="index.js"></script>
+    <!-- <script>
+      document
+        .querySelector("#read-button")
+        .addEventListener("click", function () {
+            console.log('hello')
+            if (document.querySelector("#file-input").files.length == 0) {
+                alert("Error : No file selected");
+                return;
+            } 
+
+          // file selected by user
+          let file = document.querySelector("#file-input").files[0];
+
+          // new FileReader object
+          let reader = new FileReader();
+
+          // event fired when file reading finished
+          reader.addEventListener("load", function (e) {
+            // contents of the file
+            let text = e.target.result;
+
+            console.log(text);
+          });
+
+          // event fired when file reading failed
+          reader.addEventListener("error", function () {
+            alert("Error : Failed to read file");
+          });
+
+          // read file as text file
+          reader.readAsText(file);
+        });
+    </script> -->
+  </body>
+</html>
